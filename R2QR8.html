@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Treasure Hunt Links</title>
+  <style>
+    :root {
+      --bg-1: #f5f7ff;
+      --bg-2: #eef3ff;
+      --text: #0f172a;
+      --muted: #475569;
+      --card: #ffffff;
+      --border: rgba(15, 23, 42, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-1: #0b1220;
+        --bg-2: #0d1424;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --card: #0f172a;
+        --border: rgba(148, 163, 184, 0.15);
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      padding: 32px;
+      display: grid;
+      gap: 24px;
+      justify-content: center;
+    }
+
+    .card {
+      width: min(420px, 92vw);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+      padding: 20px 24px 28px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover { transform: translateY(-4px); }
+
+    .team {
+      font-size: 1rem;
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 12px;
+      color: #fff;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+    .cta svg { width: 18px; height: 18px; }
+    .cta:hover { transform: translateY(-2px); filter: brightness(1.05); }
+
+    /* TEAM COLORS */
+    .red .pill { background: #dc2626; }
+    .red .cta { background: linear-gradient(135deg, #ef4444, #f97316); }
+
+    .blue .pill { background: #2563eb; }
+    .blue .cta { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
+
+    .green .pill { background: #16a34a; }
+    .green .cta { background: linear-gradient(135deg, #22c55e, #84cc16); }
+
+    .yellow .pill { background: #eab308; color: #000; }
+    .yellow .cta { background: linear-gradient(135deg, #fde047, #facc15); color: #000; }
+
+    .orange .pill { background: #f97316; }
+    .orange .cta { background: linear-gradient(135deg, #fb923c, #f59e0b); }
+
+    .purple .pill { background: #9333ea; }
+    .purple .cta { background: linear-gradient(135deg, #a855f7, #6366f1); }
+
+    .pink .pill { background: #ec4899; }
+    .pink .cta { background: linear-gradient(135deg, #f472b6, #db2777); }
+
+    .brown .pill { background: #92400e; }
+    .brown .cta { background: linear-gradient(135deg, #b45309, #78350f); }
+
+    .black .pill { background: #000; }
+    .black .cta { background: linear-gradient(135deg, #1f2937, #000); }
+
+    .gray .pill { background: #6b7280; }
+    .gray .cta { background: linear-gradient(135deg, #9ca3af, #4b5563); }
+
+    h1 {
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 800;
+          color: var(--text);
+          margin-bottom: 8px;
+        }
+
+.subheading {
+              text-align: center;
+              font-size: 1.1rem;
+              font-weight: 500;
+              color: var(--muted);
+              margin-bottom: 32px;
+            }
+
+  </style>
+</head>
+<body>
+
+  <h1>QR 8</h1>
+  <p class="subheading">Select your assigned colour</p>
+
+  <main class="card red">
+    <p class="team"><span class="pill">Team Red</span></p>
+    <a class="cta" href="https://forms.gle/qrTrmwQof7Lf3Q2v7" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/>
+      </svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card blue">
+    <p class="team"><span class="pill">Team Blue</span></p>
+    <a class="cta" href="https://forms.gle/jDyP5ZtWYUHSjcEy9" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/>
+      </svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card green">
+    <p class="team"><span class="pill">Team Green</span></p>
+    <a class="cta" href="https://forms.gle/5ty7WTJruzhaio8A7" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card yellow">
+    <p class="team"><span class="pill">Team Yellow</span></p>
+    <a class="cta" href="https://forms.gle/M8vP3hhHmEfxNDuWA" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card orange">
+    <p class="team"><span class="pill">Team Orange</span></p>
+    <a class="cta" href="https://forms.gle/oBozNx4e1ib1MMg78" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card purple">
+    <p class="team"><span class="pill">Team Purple</span></p>
+    <a class="cta" href="https://forms.gle/pjqBeiMR1FqeHkZ68" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card pink">
+    <p class="team"><span class="pill">Team Pink</span></p>
+    <a class="cta" href="https://forms.gle/ortSpoph8bjBTk237" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card brown">
+    <p class="team"><span class="pill">Team Brown</span></p>
+    <a class="cta" href="https://forms.gle/Ad17NYm7eFXC3yo58" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card black">
+    <p class="team"><span class="pill">Team Black</span></p>
+    <a class="cta" href="https://forms.gle/pBQqSiEt4V29ynk78" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+  <main class="card gray">
+    <p class="team"><span class="pill">Team Gray</span></p>
+    <a class="cta" href="https://forms.gle/bKMY5ozbS2rCiUFR7" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3a1.5 1.5 0 0 1 1.06.44l6 6a1.5 1.5 0 0 1 0 2.12l-7.5 7.5a1.5 1.5 0 0 1-2.12 0l-6-6a1.5 1.5 0 0 1 0-2.12l7.5-7.5A1.5 1.5 0 0 1 13.5 3Z"/></svg>
+      Click Here
+    </a>
+  </main>
+
+</body>
+</html>
